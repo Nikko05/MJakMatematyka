@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
-    <footer className='flex justify-center'>
+    <footer className='flex justify-center border-t-1 border-stone-800'>
       <div className='w-2/10 pl-15 py-15'>
         <img src="/next.svg" alt="logo" className='w-60'/>
       </div>
@@ -13,6 +13,7 @@ function Footer() {
         <div>tiktok</div>
       </div>
       <div className='w-5/10 items-center flex justify-around pr-15'>
+      {/* making component with this dives and generate using data from api **future */}
         <div className='justify-around flex flex-col'>
           <div className='text-lg text-center'>Zaufało nam</div>
           <div className='text-5xl text-fuchsia-700 text-center'>150</div>
@@ -30,7 +31,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
