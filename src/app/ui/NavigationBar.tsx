@@ -6,28 +6,34 @@ const btnDark = {
   background: 'bg-blue-400', 
   color: 'text-slate-950', 
   name: 'Login', 
-  type: 'text'
+  type: 'text',
+  paddingY: 'py-0.5',
+  paddingX: 'px-2'
 };
 
 const btnLight = {
   background: 'bg-transparent', 
   color: 'text-white', 
   name: 'Register', 
-  type: 'text'
+  type: 'text',
+  paddingY: 'py-0.5',
+  paddingX: 'px-2'
 };
 
 const btnBuy = {
   background: 'bg-transparent', 
   color: 'text-white', 
   name: '🛒', 
-  type: 'text'
+  type: 'text',
+  paddingY: 'py-0.5',
+  paddingX: 'px-2'
 };
 
 function NavigationBar() {
   return (
-    <nav className='flex pt-5 pb-3 border-b-1 border-stone-800'>
+    <nav className='flex justify-center items-center py-3.5 border-b-1 border-stone-800'>
       <div className='w-1/7'>
-        <img src='/next.svg' alt="logo" className='w-40 pl-5'/>
+        <img src='/logo_basic.svg' alt="logo" className='w-25 pl-15'/>
       </div>
       <div className='flex items-baseline pr-40 pl-40 w-4/7 justify-around'>
         <Link href='/'>Home</Link>
