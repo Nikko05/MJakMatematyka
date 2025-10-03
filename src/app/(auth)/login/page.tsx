@@ -9,7 +9,8 @@ const login = {
   placeholder: 'username@example.com',
   fontSize: 'text-base',
   paddingY: 'py-1.5',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 }
 
 const password = {
@@ -18,7 +19,8 @@ const password = {
   placeholder: '***************',
   fontSize: 'text-base',
   paddingY: 'py-1',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 }
 
 const btnDark = {
@@ -44,8 +46,8 @@ export default function Login() {
           <h1 className='text-3xl font-bold'>Witaj ponownie!</h1>
           <div className='pt-2 px-10 text-center'>Korzystaj ze swoich kursów i pakietów logując się!</div>
         </div>
-        <Input loginInput={login}/>
-        <Input loginInput={password}/>
+        <Input inputData={login}/>
+        <Input inputData={password}/>
         <Button btnData={btnDark}/>
         <div className='text-xs'>Nie masz jeszcze konta? <Link href='/register' className='font-bold'>Zarejestruj się</Link></div>
       </div>

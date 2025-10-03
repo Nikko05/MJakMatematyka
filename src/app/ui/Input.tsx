@@ -1,12 +1,24 @@
 import React from 'react'
 
-export default function Input({loginInput}: {loginInput: {name: string, placeholder: string, paddingY:string, paddingX:string, fontSize?:string, label: string}}) {
+type InputProps = {
+  inputData: {
+    name: string,
+    placeholder: string,
+    paddingY:string,
+    paddingX:string,
+    fontSize?:string,
+    label: string,
+    type: string,
+  }
+}
+
+export default function Input({inputData: {name, placeholder, paddingY, paddingX, fontSize, label, type}}: InputProps) {
   return (
     <div className='flex flex-col w-full'>
-      <label htmlFor={loginInput.name} className='text-sm pb-1'>
-        <span>{loginInput.label}</span>
+      <label htmlFor={name} className='text-sm pb-1'>
+        <span>{label}</span>
       </label>
-      <input type="text" className={`border-1 rounded-md border-blue-100/10 bg-blue-50/5 opacity-80 w-full ${loginInput.paddingY} ${loginInput.paddingX} ${loginInput.fontSize}`} placeholder={loginInput.placeholder}/>
+      <input type={type} className={`border-1 rounded-md border-blue-100/10 bg-blue-50/5 opacity-80 w-full ${paddingY} ${paddingX} ${fontSize}`} placeholder={placeholder}/>
     </div>
   )
 }
