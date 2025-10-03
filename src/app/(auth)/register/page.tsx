@@ -77,7 +77,7 @@ export default function Register() {
         <Input loginInput={password}/>
         <Input loginInput={passwordRepeat}/>
         <Button btnData={btnDark}/>
-        <div className='text-xs'>Nie masz jeszcze konta? <Link href='/register' className='font-bold'>Zarejestruj się</Link></div>
+        <div className='text-xs'>Masz juz konto? <Link href='/login' className='font-bold'>Zaloguj się</Link></div>
       </div>
     </div>
   )
