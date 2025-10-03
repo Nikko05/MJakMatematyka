@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <NavigationBar/>
-        <main className="flex-1 p-10 flex flex-col justify-around items-center">{children}</main>
+        <main className="flex-1 p-5 flex flex-col justify-around items-center">{children}</main>
         <Footer/>
       </body>
     </html>

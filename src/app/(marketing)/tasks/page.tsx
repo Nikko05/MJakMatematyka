@@ -46,9 +46,16 @@ const selectData = {
 
 export default function Tasks() {
   return (
-    <div>
+    <div className='flex flex-col w-full h-full'>
+      {/* part with filters */}
+      <div className='flex flex-row flex-wrap justify-around items-start h-1/4 w-full'>
+        <Select selectData={selectData}></Select>
+      </div>
+      {/* part with tasks */}
+      <div className=''>
+        <div></div>
+      </div>
       {/* <Input inputData={level}/> */}
-      <Select selectData={selectData}></Select>
     </div>
   );
 };
