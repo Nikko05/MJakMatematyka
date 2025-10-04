@@ -9,7 +9,8 @@ const name = {
   placeholder: 'John',
   fontSize: 'text-base',
   paddingY: 'py-1.5',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 };
 
 const surname = {
@@ -18,7 +19,8 @@ const surname = {
   placeholder: 'Walker',
   fontSize: 'text-base',
   paddingY: 'py-1.5',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 };
 
 const login = {
@@ -27,7 +29,8 @@ const login = {
   placeholder: 'username@example.com',
   fontSize: 'text-base',
   paddingY: 'py-1.5',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 };
 
 const password = {
@@ -36,7 +39,8 @@ const password = {
   placeholder: '***************',
   fontSize: 'text-base',
   paddingY: 'py-1',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'text'
 };
 
 const passwordRepeat = {
@@ -45,7 +49,8 @@ const passwordRepeat = {
   placeholder: '***************',
   fontSize: 'text-base',
   paddingY: 'py-1',
-  paddingX: 'px-2'
+  paddingX: 'px-2',
+  type: 'password'
 };
 
 const btnDark = {
@@ -71,11 +76,11 @@ export default function Register() {
           <h1 className='text-3xl font-bold'>Witaj po raz pierwszy!</h1>
           <div className='pt-2 px-10 text-center text-s'>Zdobywaj kursy i ćwicz zadania rejestrując się</div>
         </div>
-        <Input loginInput={name}/>
-        <Input loginInput={surname}/>
-        <Input loginInput={login}/>
-        <Input loginInput={password}/>
-        <Input loginInput={passwordRepeat}/>
+        <Input inputData={name}/>
+        <Input inputData={surname}/>
+        <Input inputData={login}/>
+        <Input inputData={password}/>
+        <Input inputData={passwordRepeat}/>
         <Button btnData={btnDark}/>
         <div className='text-xs'>Masz juz konto? <Link href='/login' className='font-bold'>Zaloguj się</Link></div>
       </div>

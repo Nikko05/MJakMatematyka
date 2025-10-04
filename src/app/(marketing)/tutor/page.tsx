@@ -10,26 +10,11 @@ const selectData = {
       value: '',
       level: '--wybierz godzinę--',
     },
+    // getting hours from api
     {
       value: 'level4',
       level: 'Klasa 4',
     },
-    {
-      value: 'level5',
-      level: 'Klasa 5',
-    },
-    {
-      value: 'level6',
-      level: 'Klasa 6',
-    },
-    {
-      value: 'level7',
-      level: 'Klasa 7',
-    },
-    {
-      value: 'level8',
-      level: 'Klasa 8',
-    }
   ],
 }
 
