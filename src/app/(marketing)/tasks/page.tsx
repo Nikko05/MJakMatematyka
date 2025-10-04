@@ -14,6 +14,7 @@ const level = {
 
 // filters shoul be pass from api
 const selectLevel = {
+  label: 'Wybierz klasę',
   name: 'level',
   id: 'level-select',
   optionsAmount: 6,
@@ -46,6 +47,7 @@ const selectLevel = {
 }
 
 const selectSubject = {
+  label: 'Wybierz temat',
   name: 'subject',
   id: 'subject-select',
   optionsAmount: 6,
@@ -74,6 +76,7 @@ const selectSubject = {
 }
 
 const selectDifficulty = {
+  label: 'Wybierz poziom trudności',
   name: 'difficulty',
   id: 'difficulty-select',
   optionsAmount: 6,
