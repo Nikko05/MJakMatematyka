@@ -18,11 +18,11 @@ type ItemProps = {
 export default function Item({itemToBuy: {item: {id, name, level, prize, img, difficulty}, amount}}: ItemProps) {
 
   return (
-    <div className='flex w-full border-b-1 border-blue-200 justify-start items-center pb-1.5 pt-3'>
+    <div className='flex w-full border-b-1 border-blue-200/40 justify-start items-center pb-1.5 pt-3'>
       <div className='w-1/10 flex justify-center items-center'>
         <img src={img} alt="item photo" />
       </div>
-      <div className='w-8/10'>
+      <div className='w-7/10 px-3'>
         <div className='flex flex-row'>
           <div className='text-2xl font-bold'>{name}</div>
         </div>
@@ -33,6 +33,9 @@ export default function Item({itemToBuy: {item: {id, name, level, prize, img, di
       </div>
       <div className='w-1/10 text-center'>
         {prize} PLN
+      </div>
+      <div className='w-1/10 text-center text-red-600'>
+        X
       </div>
     </div>
   );

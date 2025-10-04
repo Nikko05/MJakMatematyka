@@ -15,10 +15,20 @@ const itemToBuy = {
 
 export default function Cart() {
   return (
-    <div className='w-full'>
-      <Item itemToBuy={itemToBuy}></Item>
-      <Item itemToBuy={itemToBuy}></Item>
-      <Item itemToBuy={itemToBuy}></Item>
+    <div className='w-full h-full flex flex-row'>
+      <div className='w-6/10'>
+        <Item itemToBuy={itemToBuy}></Item>
+        <Item itemToBuy={itemToBuy}></Item>
+        <Item itemToBuy={itemToBuy}></Item>
+      </div>
+      <div className='m-5 w-4/10 border-1 border-blue-100/10 bg-blue-100/8 rounded-2xl'>
+        {/* summary and methods of buying */}
+        <div>
+          {/* articles prize */}
+          {/* methods of prize */}
+          {/* coupons */}
+        </div>
+      </div>
     </div>
   );
 };
