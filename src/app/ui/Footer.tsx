@@ -6,7 +6,7 @@ function Footer() {
       <div className='w-2/10 flex py-10 justify-center items-center'>
         <img src="/logo.svg" alt="logo" className='w-45'/>
       </div>
-      <div className='w-3/10 flex flex-col pl-40 justify-center'>
+      <div className='w-3/10 flex flex-col pl-20 justify-center'>
         <div className='text-2xl'>Znajdziesz nas tutaj</div>
         <div>messenger</div>
         <div>instagram</div>

@@ -32,12 +32,28 @@ const btnBuy = {
 
 const hrefsToLink = {
   hrefs: [
-    'courses',
-    'tutor',
-    'tasks',
-    'aboutUs'
+    {
+      href: '/',
+      label: 'Home'
+    },
+    {
+      href: '/courses',
+      label: 'Courses'
+    },
+    {
+      href: '/tutor',
+      label: 'Tutor'
+    },
+    {
+      href: '/tasks',
+      label: 'Tasks'
+    },
+    {
+      href: '/aboutUs',
+      label: 'AboutUs'
+    }
   ]
-}
+};
 
 function NavigationBar() {
   return (
