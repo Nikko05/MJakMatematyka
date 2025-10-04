@@ -57,12 +57,12 @@ const hrefsToLink = {
 
 function NavigationBar() {
   return (
-    <nav className='flex justify-center items-center py-3.5 border-b-1 border-stone-800'>
-      <div className='w-1/7'>
-        <img src='/logo_basic.svg' alt="logo" className='w-25 pl-15'/>
+    <nav className='flex justify-center items-center py-3.5 px-10 border-b-1 border-stone-800'>
+      <div className='w-1/6'>
+        <img src='/logo_basic.svg' alt="logo" className='h-10'/>
       </div>
       <NavLinks hrefsToLink={hrefsToLink}></NavLinks>
-      <div className='flex items-baseline pr-20 pl-4 w-2/7 justify-around'>
+      <div className='flex items-baseline w-1/3 justify-around'>
         <Link href='/login'>
           <Button btnData={ btnDark }/>
         </Link>

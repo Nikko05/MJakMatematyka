@@ -13,7 +13,7 @@ export default function LinksForNav({hrefsToLink: { hrefs }}: HrefsProps ) {
   const pathname = usePathname();
 
   return (
-    <div className='flex items-baseline pr-40 pl-40 w-4/7 justify-around'>       
+    <div className='flex items-baseline w-1/2 pr-15 justify-around'>       
       {hrefs.map(({href, label}) => <Link key={label} href={`${href}`} className={`capitalize ${pathname == href ? 'underline underline-offset-4 font-bold' : ''}`}>{label}</Link>)}
     </div>
   );
