@@ -9,9 +9,22 @@ function Footer() {
       <div className='w-3/10 flex flex-col justify-center items-center'>
         <div>
           <div className='text-2xl'>Znajdziesz nas tutaj</div>
-          <div>messenger</div>
-          <div>instagram</div>
-          <div>tiktok</div>
+          <a className='flex py-0.5 cursor-pointer'>
+            <img src="./facebook.svg" alt="facebook logo" className='pr-2'/>
+            <div>
+              Facebook
+            </div>
+          </a>
+          <a className='flex py-0.5 cursor-pointer'>
+            <img src="./instagram.svg" alt="instagram logo" className='pr-2'/>
+            <div>
+              Instagram
+            </div>
+          </a>
+          <a className='flex py-0.5 cursor-pointer'>
+            <img src="./tiktok.svg" alt="tiktok logo" className='pr-2'/>
+            TikTok
+          </a>
         </div>
       </div>
       <div className='w-5/10 items-center flex justify-around'>
