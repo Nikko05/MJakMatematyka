@@ -1,10 +1,12 @@
 import React from 'react';
 import Select from '@/app/ui/Select';
+import PricingCard from '@/app/ui/PricingCard';
 
 const selectData = {
-  name: 'level',
-  id: 'level-select',
-  optionsAmount: 6,
+  label: 'Wybierz godzinę',
+  name: 'hours',
+  id: 'hours-select',
+  optionsAmount: 10,
   options: [
     {
       value: '',
@@ -12,15 +14,22 @@ const selectData = {
     },
     // getting hours from api
     {
-      value: 'level4',
-      level: 'Klasa 4',
+      value: '1600',
+      level: '16:00',
     },
   ],
 }
 
+// pricing !!!!!!!!
+
 export default function Tutor() {
   return (
     <div className='flex flex-col w-full h-full'>
+      <div className='h-full w-full flex justify-around pb-5'>
+        <PricingCard></PricingCard>
+        <PricingCard></PricingCard>
+        <PricingCard></PricingCard>
+      </div>
       <div className='h-1/5 w-full'>
         <h1 className='text-center text-3xl font-bold'>Zarezerwuj swoje kolejne zajęcia</h1>
       </div>

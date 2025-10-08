@@ -28,7 +28,7 @@ function Footer() {
         </div>
       </div>
       <div className='w-5/10 items-center flex justify-around'>
-      {/* making component with this dives and generate using data from api **future */}
+      {/* making component with this dives and generate using data from api **future and other component */}
         <div className='justify-around flex flex-col'>
           <div className='text-lg text-center'>Zaufało nam</div>
           <div className='text-5xl text-fuchsia-700 text-center'>150</div>
